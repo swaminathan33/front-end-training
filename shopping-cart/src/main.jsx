@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
-import routes from './routes.jsx'
+import routes from './Pages/routes.jsx'
+import './App.css'
 
 const router = createBrowserRouter(routes)
 

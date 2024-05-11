@@ -1,11 +1,11 @@
 import React from 'react'
 
-const App = () => {
+const Spinach = () => {
   return (
     <div>
-      App page
+      spinach
     </div>
   )
 }
 
-export default App
+export default Spinach

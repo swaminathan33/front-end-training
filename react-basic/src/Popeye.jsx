@@ -1,11 +1,11 @@
 import React from 'react'
 
-const App = () => {
+const Popeye = () => {
   return (
     <div>
-      App page
+      popeye
     </div>
   )
 }
 
-export default App
+export default Popeye

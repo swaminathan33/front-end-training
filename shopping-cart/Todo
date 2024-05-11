@@ -1,0 +1,16 @@
+1. 2 pages
+    * home page
+    * shop page (includes shopping cart)
+2. simple home page
+3. at shop page
+    * navbar displays the no of items in the cart 
+    * button near the count to go to cart, checkout and pay
+4. individual card element
+    * items no input field 
+    * increment & decrement button
+    * add to cart button
+    * item title
+5. fetch items from https://fakestoreapi.com/
+6. cart amount adjust after every order
+7. testing the app with react testing library
+8. style your applications

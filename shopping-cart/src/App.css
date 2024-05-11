@@ -1,0 +1,94 @@
+/* product */
+.card{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 20px;
+    padding: 20px 20px 5px 5px;
+}
+
+.card img{
+    width: 150px;
+    height: 150px;
+}
+
+.card .title{
+    width: 200px;
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.card .price{
+    height: 100%;
+    padding-top: 10px;
+}
+.card button{
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.card button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+/* shopping */
+
+.shopping-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.loading{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/* nav */
+
+.nav{
+    padding: 30px 20px 30px 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav .link{
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.nav .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav .head{
+    font-size: 35px;
+    padding-left: 20px;
+}
+
+.nav .link:hover{
+    text-decoration: underline;
+}

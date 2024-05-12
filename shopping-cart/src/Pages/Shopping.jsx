@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Product from './Product'
 import { Link } from 'react-router-dom'
+import { AppContext } from './useContext'
 
 const Shopping = () => {
   const [items, setItems] = useState([])
-  const [count, setCount] = useState(0);
+  const {cartItems, setCartItems} = useContext(AppContext)
+  const count = cartItems.length
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     setLoading(true)
@@ -22,7 +24,7 @@ const Shopping = () => {
         <div className="head">Shopify</div>
         <div className="links">
         <Link className='link' to={'/'}>Home</Link>
-        <Link className='link' to={'cart'}>Cart</Link>
+        <Link className='link' to={'cart'}>Cart - <span>{count}</span></Link>
         </div>
       </div>
      <div className="shopping-items">
@@ -33,7 +35,7 @@ const Shopping = () => {
        : 
       
         items.map((item, index) => {
-          return <Product item={item} key={index} count={count} setCount={setCount} />
+          return <Product items={items} item={item} key={index} cartItems={cartItems} setCartItems={setCartItems} />
         })
       
      }

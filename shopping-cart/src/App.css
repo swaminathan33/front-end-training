@@ -156,3 +156,18 @@
     color: black;
     border: 1px solid black;
 }
+
+/* app */
+
+.shop-link{
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.shop-link:hover{
+    background-color: black;
+    color: white;
+}

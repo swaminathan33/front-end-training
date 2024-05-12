@@ -5,10 +5,9 @@ const App = () => {
   return (
     <div>
       <div className="nav">
-        <Link className='link' to={'/'} >Home</Link>
-        <Link className='link' to={'shopping'}>Shop</Link>
+        <Link className='shop-link' to={'shopping'}>Shop 🛒</Link>
       </div>
-      Simple Home page 
+      This is just a demo homepage 😅 click the top left ⬆️ shop button for shopping site 🛒.
     </div>
   )
 }

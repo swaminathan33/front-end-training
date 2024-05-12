@@ -5,7 +5,11 @@ import { AppContext } from "./useContext";
 const Cart = () => {
   const { cartItems, setCartItems } = useContext(AppContext);
   let total = 0;
- 
+  
+  const handleRemove = (id) => {
+    const newCartItems = cartItems.filter((i) => i[0].id !== id)
+    setCartItems(newCartItems)
+  }
   return (
     <div>
       <div className="nav">
@@ -25,6 +29,7 @@ const Cart = () => {
                     <img src={i.image} alt="" width={100} height={100} />
                     <div className="name">{i.title}</div>
                     <div className="price">$ {i.price}</div>
+                    <div><button onClick={() => handleRemove(i.id)}>X</button></div>
                   </div>
               );
             })

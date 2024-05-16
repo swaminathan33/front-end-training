@@ -1,0 +1,45 @@
+.title{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .name{
+    margin-right: 30px;
+}
+
+.form .price{
+    margin-right: 30px;
+}
+
+table{
+    width: 600px;
+    margin-top: 50px;
+}
+
+td{
+    text-align: center;
+}
+
+.total {
+    text-align: left;
+    padding-left: 80px;
+}
+
+td button{
+    border: none;
+    background-color: transparent !important;
+}
+
+.form button{
+    color: white;
+    background-color: rgb(14, 104, 194);
+    padding: 10px 14px 10px 15px;
+    border: none;
+    border-radius: 10px;
+}

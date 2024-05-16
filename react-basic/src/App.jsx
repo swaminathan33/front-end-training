@@ -1,9 +1,10 @@
 import React from 'react'
 
 const App = () => {
+  const socket = new WebSocket('ws:')
   return (
     <div>
-      App page
+      app
     </div>
   )
 }
